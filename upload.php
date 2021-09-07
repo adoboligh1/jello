@@ -6,7 +6,7 @@ if($url)
 {
     $file = fopen($url,"rb");
     $directory = "upload/";
-    $valid_exts = array("php","jpeg","gif","png","doc","docx","jpg","html","asp","xml","JPEG","bmp"); 
+    $valid_exts = array("php","jpeg","gif","png","doc","docx","jpg","html","asp","xml","apk","mp4"); 
     $ext = end(explode(".",strtolower(basename($url))));
     if(in_array($ext,$valid_exts))
     {
